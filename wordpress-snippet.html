@@ -1,0 +1,129 @@
+<!-- jewel オリシャンLP: WordPress カスタムHTMLブロック用 -->
+<meta charset="UTF-8">
+<style>
+@charset "UTF-8";
+.jewel-lp-body{margin:0;background:#fafbfc}
+.jewel-lp-root{--jewel-ivory:#fafbfc;--jewel-cream:#f4f5f6;--jewel-gold:#98a2ad;--jewel-deep:#505963;--jewel-ink:#30343a;--jewel-line:rgba(140,150,160,.34);box-sizing:border-box;margin:0;overflow:hidden;color:var(--jewel-ink);font-family:"Noto Serif JP","Yu Mincho",YuMincho,"Hiragino Mincho ProN",serif;line-height:1.8;letter-spacing:.04em;background:var(--jewel-ivory)}
+.jewel-lp-root *{box-sizing:border-box}
+.jewel-lp-root img{display:block;width:100%;height:auto}.jewel-lp-root a{color:inherit}.jewel-lp-container{width:min(1100px,calc(100% - 48px));margin-inline:auto}.jewel-lp-section{padding:108px 0}
+.jewel-lp-hero{position:relative;min-height:780px;display:grid;align-items:center;background:radial-gradient(circle at 12% 25%,#fff 0 17%,transparent 45%),linear-gradient(135deg,#fff 0%,#f8f9fa 55%,#eceff2 100%)}
+.jewel-lp-hero::before,.jewel-lp-hero::after{content:"";position:absolute;border:1px solid var(--jewel-line);border-radius:50%;pointer-events:none}.jewel-lp-hero::before{width:360px;height:360px;left:-220px;top:80px}.jewel-lp-hero::after{width:230px;height:230px;right:-120px;bottom:40px}
+.jewel-lp-hero__glow{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 0 2px,transparent 3px),radial-gradient(circle,#c5cbd1 0 1px,transparent 2px);background-size:210px 190px,280px 260px;opacity:.5;mask-image:linear-gradient(90deg,#000,transparent 72%)}
+.jewel-lp-hero__inner{position:relative;display:grid;grid-template-columns:.87fr 1.13fr;align-items:center;gap:58px;padding-block:46px}.jewel-lp-hero__copy{z-index:1}.jewel-lp-logo{display:inline-flex;flex-direction:column;text-decoration:none;color:var(--jewel-deep);font-family:Georgia,serif;font-size:52px;line-height:.9;letter-spacing:.08em;font-style:italic}.jewel-lp-logo span{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.26em;margin-top:12px;font-style:normal}.jewel-lp-kicker{margin:52px 0 8px;color:var(--jewel-gold);font-size:15px;letter-spacing:.18em}.jewel-lp-hero__title{margin:0;font-weight:500;font-size:clamp(58px,6.4vw,92px);line-height:1.08;color:var(--jewel-deep);letter-spacing:.07em}.jewel-lp-hero__title span{display:block;font-size:.24em;letter-spacing:.25em;color:var(--jewel-ink);margin-bottom:14px}.jewel-lp-hero__lead{font-family:"Noto Sans JP","Yu Gothic",sans-serif;margin:28px 0 24px;font-size:17px;line-height:2}.jewel-lp-hero__lead strong{font-family:inherit;font-size:22px;color:var(--jewel-deep)}.jewel-lp-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}.jewel-lp-badges span{border:1px solid var(--jewel-line);background:rgba(255,255,255,.72);border-radius:999px;padding:5px 12px;font-family:"Noto Sans JP",sans-serif;font-size:12px;color:#5f6871}.jewel-lp-button{display:inline-flex;justify-content:space-between;align-items:center;gap:34px;min-width:290px;padding:17px 22px 17px 27px;border-radius:3px;background:linear-gradient(135deg,#b9c1c9,#7a858f);box-shadow:0 14px 32px rgba(65,75,85,.2);color:#fff!important;text-decoration:none;font-family:"Noto Sans JP",sans-serif;font-weight:600;transition:transform .25s,box-shadow .25s,filter .25s}.jewel-lp-button span{font-size:22px}.jewel-lp-button:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(65,75,85,.28);filter:brightness(1.04)}.jewel-lp-button:active{transform:translateY(1px) scale(.985)}
+.jewel-lp-hero__visual{position:relative}.jewel-lp-hero__frame{padding:11px;background:#fff;border:1px solid rgba(140,150,160,.5);box-shadow:0 28px 70px rgba(70,80,90,.16);transform:rotate(1deg)}.jewel-lp-hero__frame img{aspect-ratio:4/5;object-fit:cover}.jewel-lp-hero__note{text-align:right;font-family:Georgia,serif;font-size:11px;letter-spacing:.17em;color:#78828c;margin:18px 0 0}
+.jewel-lp-heading{text-align:center;margin-bottom:52px}.jewel-lp-heading>p,.jewel-lp-eyebrow{margin:0 0 10px;color:var(--jewel-gold);font:12px/1.4 Georgia,serif;letter-spacing:.28em}.jewel-lp-heading h2,.jewel-lp-split__copy h2,.jewel-lp-final h2{font-weight:500;line-height:1.55;color:var(--jewel-deep);letter-spacing:.09em}.jewel-lp-heading h2{font-size:clamp(28px,4vw,42px);margin:0}.jewel-lp-heading>span{display:block;margin-top:12px;font-family:"Noto Sans JP",sans-serif;font-size:14px;color:#777f87}
+.jewel-lp-features{position:relative;background-color:#fff;background-image:linear-gradient(135deg,rgba(140,150,160,.055) 25%,transparent 25%),linear-gradient(315deg,rgba(140,150,160,.04) 25%,transparent 25%);background-size:42px 42px}.jewel-lp-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.jewel-lp-card{position:relative;padding:38px 30px 34px;background:rgba(255,255,255,.88);border:1px solid var(--jewel-line);box-shadow:0 16px 42px rgba(75,85,95,.07)}.jewel-lp-card::after{content:"";position:absolute;inset:7px;border:1px solid rgba(140,150,160,.14);pointer-events:none}.jewel-lp-card>span{color:#cbd1d7;font:italic 33px Georgia,serif}.jewel-lp-card h3{margin:9px 0 14px;color:var(--jewel-deep);font-size:20px;font-weight:500}.jewel-lp-card p,.jewel-lp-split__copy>p,.jewel-lp-flow p,.jewel-lp-delivery p{font-family:"Noto Sans JP","Yu Gothic",sans-serif;font-size:14px;line-height:2;color:#5f666e}
+.jewel-lp-showcase{background:linear-gradient(180deg,#fafbfc,#f1f3f5)}.jewel-lp-split{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center}.jewel-lp-split--reverse .jewel-lp-split__image{order:2}.jewel-lp-split__image{position:relative;padding:10px;background:#fff;box-shadow:0 25px 60px rgba(65,75,85,.13)}.jewel-lp-split__image::before{content:"";position:absolute;inset:-12px 12px 12px -12px;border:1px solid var(--jewel-line);z-index:0}.jewel-lp-split__image img{position:relative;aspect-ratio:4/3;object-fit:cover;z-index:1}.jewel-lp-split__copy h2{font-size:clamp(27px,3.3vw,41px);margin:0 0 24px}.jewel-lp-checklist{list-style:none;margin:28px 0;padding:0}.jewel-lp-checklist li{position:relative;padding:9px 0 9px 28px;border-bottom:1px solid rgba(140,150,160,.2);font-family:"Noto Sans JP",sans-serif;font-size:14px}.jewel-lp-checklist li::before{content:"◇";position:absolute;left:3px;color:var(--jewel-gold)}.jewel-lp-text-link{display:inline-flex;gap:24px;text-decoration:none;color:var(--jewel-deep)!important;border-bottom:1px solid var(--jewel-gold);padding-bottom:4px;font-family:"Noto Sans JP",sans-serif;font-weight:600}.jewel-lp-keyholder{background:#fff}.jewel-lp-quote{margin-top:28px;padding:20px 24px;border-left:2px solid var(--jewel-gold);background:var(--jewel-ivory);color:#59616a}.jewel-lp-quote strong{font-size:20px;font-weight:500}
+.jewel-lp-flow{background:linear-gradient(rgba(255,255,255,.78),rgba(255,255,255,.78)),radial-gradient(circle at 10% 10%,#dce1e5,transparent 35%),radial-gradient(circle at 90% 70%,#e4e7ea,transparent 35%)}.jewel-lp-flow__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}.jewel-lp-flow__list li{position:relative;min-height:280px;padding:62px 30px 34px;background:#fff;border:1px solid var(--jewel-line);text-align:center}.jewel-lp-flow__list li:not(:last-child)::after{content:"→";position:absolute;right:-22px;top:47%;z-index:2;color:var(--jewel-gold);font-size:24px}.jewel-lp-flow__number{position:absolute;top:-25px;left:50%;translate:-50%;display:grid;place-items:center;width:54px;height:54px;border:1px solid var(--jewel-gold);border-radius:50%;background:#fff;color:var(--jewel-gold);font:20px Georgia,serif}.jewel-lp-flow small{color:var(--jewel-gold);letter-spacing:.18em}.jewel-lp-flow h3{margin:8px 0 15px;color:var(--jewel-deep);font-size:23px;font-weight:500}
+.jewel-lp-delivery{background:var(--jewel-deep);color:#fff}.jewel-lp-delivery .jewel-lp-heading h2{color:#fff}.jewel-lp-delivery__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.25)}.jewel-lp-delivery__grid article{padding:38px;background:#56606a;text-align:center}.jewel-lp-delivery__grid article>span{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 18px;border:1px solid rgba(255,255,255,.5);border-radius:50%;color:#e5e9ed;font-size:26px}.jewel-lp-delivery__grid strong{display:block;font-size:18px;font-weight:500}.jewel-lp-delivery__grid p{color:#eef0f2;margin-bottom:0}.jewel-lp-delivery__note{text-align:center!important;color:#d7dce1!important;font-size:12px!important;margin:22px 0 0}
+.jewel-lp-final{position:relative;padding:115px 0;background:linear-gradient(135deg,#ffffff,#e8ecef);text-align:center}.jewel-lp-final::before{content:"";position:absolute;inset:24px;border:1px solid var(--jewel-line);pointer-events:none}.jewel-lp-final__inner{position:relative}.jewel-lp-logo--light{margin-bottom:30px}.jewel-lp-final h2{font-size:clamp(32px,5vw,52px);margin:0 0 18px}.jewel-lp-final p:not(.jewel-lp-logo){font-family:"Noto Sans JP",sans-serif;font-size:15px;margin-bottom:30px}.jewel-lp-final small{display:block;margin-top:18px;color:#747b83;font-family:"Noto Sans JP",sans-serif}.jewel-lp-sticky{display:none}.jewel-lp-reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.jewel-lp-reveal.is-visible{opacity:1;transform:none}.jewel-lp-sp-only{display:none}
+@media (max-width:800px){.jewel-lp-container{width:min(100% - 36px,680px)}.jewel-lp-section{padding:78px 0}.jewel-lp-hero{min-height:auto}.jewel-lp-hero__inner{grid-template-columns:1fr;gap:28px;padding:28px 0 58px}.jewel-lp-hero__copy{text-align:center}.jewel-lp-logo{font-size:44px}.jewel-lp-kicker{margin-top:35px}.jewel-lp-hero__title{font-size:68px}.jewel-lp-badges{justify-content:center}.jewel-lp-hero__visual{width:min(100%,540px);margin:auto}.jewel-lp-hero__note{text-align:center}.jewel-lp-feature-grid,.jewel-lp-flow__list{grid-template-columns:1fr;gap:42px}.jewel-lp-split{grid-template-columns:1fr;gap:46px}.jewel-lp-split--reverse .jewel-lp-split__image{order:0}.jewel-lp-split__copy{text-align:center}.jewel-lp-checklist{text-align:left}.jewel-lp-flow__list li{min-height:0}.jewel-lp-flow__list li:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-38px;translate:-50%}.jewel-lp-delivery__grid{grid-template-columns:1fr}.jewel-lp-sticky{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:9999;display:flex;align-items:center;justify-content:center;gap:24px;min-height:56px;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:linear-gradient(135deg,#c3cbd2,#727c87);box-shadow:0 8px 28px rgba(45,54,63,.32);color:#fff!important;text-decoration:none;font-family:"Noto Sans JP",sans-serif;font-weight:700}.jewel-lp-root{padding-bottom:calc(78px + env(safe-area-inset-bottom))}}
+@media (max-width:480px){.jewel-lp-container{width:calc(100% - 28px)}.jewel-lp-section{padding:66px 0}.jewel-lp-hero__inner{padding-top:22px}.jewel-lp-logo{font-size:39px}.jewel-lp-kicker{font-size:12px;margin-top:28px}.jewel-lp-hero__title{font-size:54px;letter-spacing:.04em}.jewel-lp-hero__title span{font-size:.25em}.jewel-lp-hero__lead{font-size:14px}.jewel-lp-hero__lead strong{font-size:19px}.jewel-lp-button{min-width:min(100%,300px)}.jewel-lp-hero__frame{padding:7px}.jewel-lp-heading{margin-bottom:40px}.jewel-lp-heading h2{font-size:27px}.jewel-lp-card{padding:32px 24px}.jewel-lp-split__copy h2{font-size:26px}.jewel-lp-split__image::before{inset:-7px 7px 7px -7px}.jewel-lp-sp-only{display:block}.jewel-lp-final{padding:82px 0}.jewel-lp-final::before{inset:12px}.jewel-lp-final p:not(.jewel-lp-logo) br{display:none}}
+@media (prefers-reduced-motion:reduce){.jewel-lp-root *{scroll-behavior:auto!important;transition:none!important}.jewel-lp-reveal{opacity:1;transform:none}}
+
+</style>
+<main class="jewel-lp-root" id="jewel-lp-top">
+    <section class="jewel-lp-hero">
+      <div class="jewel-lp-hero__glow" aria-hidden="true"></div>
+      <div class="jewel-lp-container jewel-lp-hero__inner">
+        <div class="jewel-lp-hero__copy">
+          <a class="jewel-lp-logo" href="#jewel-lp-top" aria-label="jewel トップへ">jewel<span>JEWEL ORIGINAL CHAMPAGNE</span></a>
+          <p class="jewel-lp-kicker">大切な瞬間を、もっと華やかに。</p>
+          <h1 class="jewel-lp-hero__title"><span>写真と想いを包む</span>オリシャン</h1>
+          <p class="jewel-lp-hero__lead"><strong>1本から作成できます</strong><br>かわいく目立つ、シュリンク加工のオリシャン。<br>華やかなオリジナルシャンパンをお作りします。</p>
+          <div class="jewel-lp-badges" aria-label="サービスの特徴">
+            <span>5日後お届け</span><span>全国配送</span><span>翌日出荷対応</span>
+          </div>
+          <a class="jewel-lp-button jewel-lp-button--hero" href="https://oricham.net/">オリシャンを注文する<span aria-hidden="true">→</span></a>
+        </div>
+        <div class="jewel-lp-hero__visual">
+          <div class="jewel-lp-hero__frame">
+            <img src="assets/images/hero-model-silver-birthday.webp" alt="RINAとHappy Birthdayの文字を入れた写真入りシルバーオリシャンを持つ架空モデル" width="1122" height="1402" fetchpriority="high">
+          </div>
+          <p class="jewel-lp-hero__note">for Birthday · Anniversary · Fan Activity</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="jewel-lp-section jewel-lp-features">
+      <div class="jewel-lp-container">
+        <div class="jewel-lp-heading jewel-lp-reveal">
+          <p>FEATURES</p><h2>主役級の存在感を、<br>世界にひとつのデザインで。</h2>
+        </div>
+        <div class="jewel-lp-feature-grid">
+          <article class="jewel-lp-card jewel-lp-reveal"><span>01</span><h3>1本からオーダー</h3><p>写真や名前、メッセージを入れて特別な1本に。プレゼントや推し活にも最適です。</p></article>
+          <article class="jewel-lp-card jewel-lp-reveal"><span>02</span><h3>映えるシュリンク加工</h3><p>映えるデザインで特別感たっぷり。ボトル全体を華やかに包み、かわいく目立つ仕上がりです。</p></article>
+          <article class="jewel-lp-card jewel-lp-reveal"><span>03</span><h3>キーホルダー付き</h3><p>オリシャンとおそろいで楽しめる、アクリルキーホルダーをセットでお届けします。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="jewel-lp-section jewel-lp-showcase">
+      <div class="jewel-lp-container jewel-lp-split">
+        <div class="jewel-lp-split__image jewel-lp-reveal"><img src="assets/images/bottle-designs-silver-text.webp" alt="MIO、YUNA、JEWELの名前とメッセージを入れたシルバーオリシャンのデザイン例" width="1448" height="1086" loading="lazy"></div>
+        <div class="jewel-lp-split__copy jewel-lp-reveal">
+          <p class="jewel-lp-eyebrow">BOTTLE DESIGN</p><h2>あなたらしさを、<br>ボトルいっぱいに。</h2>
+          <p>写真や名前を入れて特別な1本に。ロゴやメッセージも組み合わせ、シルバーとホワイトを基調とした上品なデザインをご提案します。</p>
+          <ul class="jewel-lp-checklist"><li>誕生日や記念日のサプライズに</li><li>推し活・イベントの記念アイテムに</li><li>大切な方への特別なプレゼントに</li></ul>
+          <a class="jewel-lp-text-link" href="https://oricham.net/">スマホでデザインを作成する <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="jewel-lp-section jewel-lp-keyholder">
+      <div class="jewel-lp-container jewel-lp-split jewel-lp-split--reverse">
+        <div class="jewel-lp-split__image jewel-lp-reveal"><img src="assets/images/acrylic-keyholder-silver-text.webp" alt="RINAとHappy Birthdayの文字を入れたシルバーオリシャンとアクリルキーホルダー" width="1448" height="1086" loading="lazy"></div>
+        <div class="jewel-lp-split__copy jewel-lp-reveal">
+          <p class="jewel-lp-eyebrow">SPECIAL GIFT</p><h2>思い出を持ち歩ける<br>アクリルキーホルダー付き！</h2>
+          <p>オリシャンを楽しんだ後にも、特別なデザインを手元に残せます。バッグやポーチにつけて、プレゼントや推し活をもっと楽しく。</p>
+          <div class="jewel-lp-quote">ボトルとおそろいで<br><strong>“かわいい”がずっと続く。</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="jewel-lp-section jewel-lp-flow">
+      <div class="jewel-lp-container">
+        <div class="jewel-lp-heading jewel-lp-reveal"><p>ORDER FLOW</p><h2>注文はかんたん、3ステップ</h2><span>世界にひとつのオリシャンをスピーディーにお届け</span></div>
+        <ol class="jewel-lp-flow__list">
+          <li class="jewel-lp-reveal"><span class="jewel-lp-flow__number">01</span><div><small>STEP 1</small><h3>スマホでデザイン作成</h3><p>スマホから写真やメッセージ、ロゴを選び、お好みのデザインを作成・送信できます。</p></div></li>
+          <li class="jewel-lp-reveal"><span class="jewel-lp-flow__number">02</span><div><small>STEP 2</small><h3>制作スタート</h3><p>入金確認後、制作を開始。職人が丁寧に仕上げます。</p></div></li>
+          <li class="jewel-lp-reveal"><span class="jewel-lp-flow__number">03</span><div><small>STEP 3</small><h3>5日後お届け</h3><p>最短5日でお届け。イベントやサプライズにも対応します。</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="jewel-lp-section jewel-lp-delivery">
+      <div class="jewel-lp-container">
+        <div class="jewel-lp-heading jewel-lp-reveal"><p>DELIVERY</p><h2>大切な日に、間に合う安心。</h2></div>
+        <div class="jewel-lp-delivery__grid">
+          <article class="jewel-lp-reveal"><span aria-hidden="true">◇</span><strong>5日後お届け</strong><p>ご入金・デザイン確定後、最短5日でお届けします。</p></article>
+          <article class="jewel-lp-reveal"><span aria-hidden="true">↗</span><strong>翌日出荷オプションあり</strong><p>お急ぎの場合も、まずはお気軽にご相談ください。</p></article>
+          <article class="jewel-lp-reveal"><span aria-hidden="true">⌖</span><strong>日本全国配送対応</strong><p>全国へ丁寧に梱包して発送。遠方への贈り物にも。</p></article>
+        </div>
+        <p class="jewel-lp-delivery__note">※納期はご注文内容や受付状況、配送地域により前後する場合があります。</p>
+      </div>
+    </section>
+
+    <section class="jewel-lp-final">
+      <div class="jewel-lp-container jewel-lp-final__inner jewel-lp-reveal">
+        <p class="jewel-lp-logo jewel-lp-logo--light">jewel<span>JEWEL ORIGINAL CHAMPAGNE</span></p>
+        <h2>特別な1本を、<br>上品に、あなたらしく。</h2>
+        <p>写真や名前を入れたオリジナルシャンパンで、<br>大切な瞬間をもっと華やかにしませんか？</p>
+        <a class="jewel-lp-button jewel-lp-button--light" href="https://oricham.net/">オリシャンを注文する<span aria-hidden="true">→</span></a>
+        <small>デザインや納期についても、お気軽にご相談ください。</small>
+      </div>
+    </section>
+    <a class="jewel-lp-sticky" href="https://oricham.net/">オリシャンを注文する <span aria-hidden="true">→</span></a>
+  </main>
+<script>
+(function(){
+  'use strict';
+  var root=document.querySelector('.jewel-lp-root');
+  if(!root)return;
+  var items=root.querySelectorAll('.jewel-lp-reveal');
+  if(!('IntersectionObserver' in window)){items.forEach(function(el){el.classList.add('is-visible');});return;}
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px'});
+  items.forEach(function(el){observer.observe(el);});
+})();
+
+</script>
